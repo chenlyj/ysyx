@@ -7,5 +7,6 @@ sim:
 	verilator --cc --exe -Wall --build csrc/main.cpp vsrc/top.v --trace
 	make -C obj_dir/ -f Vtop.mk Vtop
 	./obj_dir/Vtop
+	gtkwave waveform.vcd
 
 include ../Makefile
