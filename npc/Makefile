@@ -48,5 +48,6 @@ sim:
 	@$^
 
 clean:
-	rm -rf 
+	 
+
 include ../Makefile
