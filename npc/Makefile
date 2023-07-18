@@ -53,3 +53,5 @@ clean:
 	gtkwave waveform.vcd
 
 include ../Makefile
+
+.PHONY: all clean sim
