@@ -4,7 +4,11 @@
 #include "verilated.h"
 #include "Vtop.h"
 #include "verilated_vcd_c.h"
+#include "nvboard.h"
+
 #define sim_time 200
+
+
 int main(int argc,char** argv){
   VerilatedContext* contextp = new VerilatedContext;
   contextp->commandArgs(argc, argv);
