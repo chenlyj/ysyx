@@ -46,11 +46,13 @@ sim: $(BIN)
 	@$^
 
 clean:
-	verilator --cc --exe -Wall --build csrc/main.cpp vsrc/top.v --trace
-	make -C obj_dir/ -f Vtop.mk Vtop
-	./obj_dir/Vtop
-	gtkwave waveform.vcd
+	rm -rf ./build/
 
 include ../Makefile
 
 .PHONY: all clean sim
+
+# verilator --cc --exe -Wall --build csrc/main.cpp vsrc/top.v --trace
+# make -C obj_dir/ -f Vtop.mk Vtop
+# ./obj_dir/Vtop
+# gtkwave waveform.vcd
